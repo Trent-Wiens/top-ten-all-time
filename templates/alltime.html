@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Ten All Time</title>
+    <link rel="stylesheet" type="text/css" href="styles_at.css">
+</head>
+<body>
+    <h1>Top Ten All Time</h1>
+
+    <h1>My Album Collection</h1>
+    <div id="album-list">
+        {% for album in albums %}
+        <div class="album-container">
+            <div class="album" onclick="this.classList.toggle('flip')">
+                <!-- <div class="album-side front" style="background-image: url('{{ album.cover }}');"></div>
+                <div class="album-side back" style="background-image: url('{{ album.back_cover }}');"></div> -->
+            </div>
+            <p>{{ album.name }} - {{ album.artist }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+
+    <script src="script_at.js"></script>
+</body>
+</html>
