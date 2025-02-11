@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.album-card {
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.album-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.album-card.flipped .album-inner {
+    transform: rotateY(180deg);
+}
+
+.album-front, .album-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.album-front {
+    background-color: white;
+}
+
+.album-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.album-back {
+    background-color: #222;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+}
+
+/* Make album text flexible so it doesn't push the icons away */
+.album-text {
+    flex-grow: 1; /* Takes up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the text */
+    align-items: center;
+}
+
+/* Keeps the music links pinned to the bottom */
+.music-links {
+    display: flex;
+    gap: 10px;
+    margin-top: auto; /* Pushes the icons to the bottom */
+    padding-bottom: 5px;
+}
+
+.music-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.music-icon:hover {
+    transform: scale(1.2);
+}
