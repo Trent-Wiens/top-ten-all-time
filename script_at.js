@@ -53,8 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 
                     if (!radarPanel.classList.contains("open")) {
                         radarPanel.classList.add("open");
+                        radarTab.classList.add("open");
                     } else {
                         radarPanel.classList.remove("open");
+                        radarTab.classList.remove("open");
                     }
                 });
 
@@ -75,12 +77,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 `;
 
                 // Append elements
-                back.appendChild(radarTab);
 
                 inner.appendChild(front);
                 inner.appendChild(back);
                 card.appendChild(inner);
                 card.appendChild(radarPanel);  // ✅ Separate from album-back
+                card.appendChild(radarTab);
+
 
                 card.addEventListener("click", function () {
                     if (!card.classList.contains("flipping")) {
@@ -89,15 +92,24 @@ document.addEventListener("DOMContentLoaded", function () {
                         setTimeout(() => {
                             card.classList.toggle("flipped");
                             radarTab.classList.toggle("flipped");
+                            radarPanel.classList.toggle("flipped");
                         }, 10); // Small delay before flipping starts
+
+                        if (radarPanel.classList.contains("open")) {
+                            radarPanel.classList.remove("open");
+                            radarTab.classList.remove("open");
+                        }
+                        
                 
                         setTimeout(() => {
                             card.classList.remove("flipping"); // Remove class after animation ends
                             radarPanel.style.opacity = "1"; // Show radar panel after animation
+                            // radarTab.style.opacity = "1";
                         }, 600); // Adjust this time to match CSS flip animation duration
                 
                         // Hide radar panel while flipping
                         radarPanel.style.opacity = "0";
+                        // radarTab.style.opacity = "0";
                     }
                 });
 

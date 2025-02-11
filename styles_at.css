@@ -6,15 +6,20 @@ body {
 
 .album-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
+    gap: 50px;
     padding: 20px;
     justify-items: center;
 }
 
+.album-container {
+    margin: 0; /* Ensure no extra margin */
+    padding: 0; /* Ensure no extra padding */
+}
+
 .album-card {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     perspective: 1000px;
     cursor: pointer;
 }
@@ -52,58 +57,71 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border: 2px solid black;
+    border-radius: 1px;
+    /* border-radius: 10px; */
 }
 
 .album-back {
-    background-color: #222;
+    background-color: black;
     color: white;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0;
     text-align: center;
     height: 100%;
     position: relative;
 }
 
+.album-text{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    padding-top: 25%;
+}
 /* === Radar Plot Popout === */
 
 /* The radar tab is inside the drawer, so it moves with it */
 .radar-tab {
     position: absolute;
-    right: -20px; /* Aligns with the edge of the radar panel */
+    right: -20px;
     top: 50%;
-    transform: translateY(-50%) rotate(180deg);
-    background: #444;
-    color: white;
+    width: 50px;
+    background: white;
+    color: black;
+    border-color: black;
+    border: 2px;
     padding: 5px;
     font-size: 12px;
     cursor: pointer;
     writing-mode: vertical-rl;
-    border-radius: 5px 0 0 5px;
-    transition: transform 0.3s ease-in-out, right 0.3s ease-in-out;
-    z-index: -1;
+    border-radius: 0 5px 5px 0;
+    transition: transform 0.3s ease-in-out;
+    z-index: -2;
+    opacity: 0; /* Ensure it's always visible normally */
 }
 
 .radar-panel {
     position: absolute;
-    left: 0%;
-    top: 7.5%;
-    width: 100%;
-    height: 100%;
-    background: #333;
+    height: 90%;
+    width: 95%;
+    top: 5%;
+    left: 0%; 
+    background: white;
     display: flex;
     align-items: center;
-    justify-content: center;
-    opacity: 0; /* Fully hidden at start */
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    justify-content: center; 
+    opacity: 1; /* Fully hidden at start */
+    transition: transform 0.3s ease-in-out;
     z-index: -1; /* Behind album */
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     pointer-events: none;
-
+    opacity: 0;
+    border: 1px solid black;
 }
 
 /* Hide radar panel while flipping */
@@ -112,25 +130,38 @@ body {
     pointer-events: none;
 }
 
+/* Hide radar-tab ONLY while flipping */
+.album-card.flipping .radar-tab {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.radar-tab.flipped {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.radar-panel.flipped {
+    opacity: 1;
+}
+
 /* The radar plot image inside the drawer */
 .radar-panel img {
-    width: 100px;
-    height: 100px;
-    /* display: none; Hidden until the tab is clicked */
+    position: absolute;
+    right: 0px;
+    width: 80%;
+    height: auto;
 }
 
 /* Moves the drawer into view when open */
 .radar-panel.open{
-    transform: translateX(125px);
-    display: flex;
-    opacity: 1;
-    /* z-index: 10; Bring in front */
+    transform: translateX(175px);
 }
 
-/* Show the radar plot image when open */
-.radar-panel.open img {
-    display: block;
+.radar-tab.open{
+    transform: translateX(175px);
 }
+
 
 
 .music-links {

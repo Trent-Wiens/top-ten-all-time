@@ -9,10 +9,26 @@
     },
     {
         "Album Name": "Flower Boy",
-        "Artist": "Tyler, the Creator",
+        "Artist": "Tyler, The Creator",
         "Cover URL": "img/FlowerBoy.webp",
         "Spotify Link": "https://open.spotify.com/album/2nkto6YNI4rUYTLqEwWJ3o?si=VgtMMHQdQRaWVzPRTuhPSA",
         "Apple Music Link": "https://music.apple.com/us/album/flower-boy/1254572564",
         "Radar Plot": "radar_plots/Flower_Boy.png"
+    },
+    {
+        "Album Name": "Madvilliany",
+        "Artist": "Madvillian, Madlib, MF DOOM",
+        "Cover URL": "img/Madvillainy.jpg",
+        "Spotify Link": "https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk?si=Fa5Lk-t0Sk6Ll0hwzRCf4g",
+        "Apple Music Link": "https://music.apple.com/us/album/madvillainy/887699504",
+        "Radar Plot": "radar_plots/Madvilliany.png"
+    },
+    {
+        "Album Name": "IGOR",
+        "Artist": "Tyler, The Creator",
+        "Cover URL": "img/IGOR.jpg",
+        "Spotify Link": "https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE?si=auYJvt1bQQWEV01JlT20-Q",
+        "Apple Music Link": "https://music.apple.com/us/album/igor/1463409338",
+        "Radar Plot": "radar_plots/IGOR.png"
     }
 ]

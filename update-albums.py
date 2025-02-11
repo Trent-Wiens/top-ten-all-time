@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import json
 import os
+import random
 
 from PIL import Image
 
@@ -30,13 +31,14 @@ def generate_radar_plot(album_name, scores, cover_url):
 
     # Compute the angle for each category
     angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
-    scores += scores[:1]  # Close the radar shape
+    angles = [a + (np.pi / num_vars) for a in angles]  # Rotate so a point is at the bottom
     angles += angles[:1]  # Close the radar shape
+    scores += scores[:1]  # Close the radar shape
     
     avg_color = get_average_color(cover_url)
     fill_color = (avg_color[0] / 255, avg_color[1] / 255, avg_color[2] / 255, 0.4)  # RGBA with transparency
     line_color = (avg_color[0] / 255, avg_color[1] / 255, avg_color[2] / 255, 1)  # Full opacity for lines
-
+            
     # Create figure
     fig, ax = plt.subplots(figsize=(4, 4), subplot_kw=dict(polar=True))
     
@@ -47,19 +49,20 @@ def generate_radar_plot(album_name, scores, cover_url):
         
     ax.fill(angles, scores, color=fill_color)  # Fill with transparency
     ax.plot(angles, scores, color=line_color, linewidth=2)  # Outline
-
+    
+    for index, angle in enumerate(angles):
+        if 0 < angle < 1:
+            angles[index] = angle + .25
+        elif 2 < angle < 3:
+            angles[index] = angle - .25 
+        elif 3 < angle < 4:
+            angles[index] = angle + .25
+        elif 5 < angle < 6:
+            angles[index] = angle - .25
     # Labels
     ax.set_xticks(angles[:-1])
-    ax.set_xticklabels(CATEGORIES, fontsize=8, fontdict={'fontsize': 10, 'fontweight': 'normal', 'family': 'serif'})
-    # Move labels outward
-    print(angles)
-    for label, angle in zip(ax.get_xticklabels(), angles[:-1]):
-        if (angle > 3 and angle < 4):
-            label.set_y(label.get_position()[1] - .2)  # Move slightly out
-        elif angle == 0:
-            label.set_y(label.get_position()[1] - .125)  # Move slightly out
-        else:
-            label.set_y(label.get_position()[1] + .05)  # Move slightly down
+    ax.set_xticklabels(CATEGORIES, fontsize=15, fontdict={'fontweight': 'normal', 'family': 'serif'})
+
 
     ax.set_yticklabels([])
     ax.spines["polar"].set_visible(False)  # Remove outer circle
@@ -68,6 +71,14 @@ def generate_radar_plot(album_name, scores, cover_url):
     # Save the figure
     safe_name = album_name.replace(" ", "_").replace("/", "_")  # Ensure safe filenames
     plot_path = f"radar_plots/{safe_name}.png"
+    
+    # Make figure background transparent
+    # fig.patch.set_alpha(0)
+    # ax.set_facecolor((1, 1, 1, 0))  # Set axes background to transparent
+
+    # Save the figure with a transparent background
+    # plt.savefig(plot_path, bbox_inches='tight', dpi=100, transparent=True)
+        
     plt.savefig(plot_path, bbox_inches='tight', dpi=100)
     plt.close()
     
@@ -96,6 +107,9 @@ for _, row in df.iterrows():
     album_info["Radar Plot"] = generate_radar_plot(row["Album Name"], scores, row["Cover URL"])
 
     albums_data.append(album_info)
+
+# Shuffle the order of albums_data before saving
+random.shuffle(albums_data)
 
 # Save JSON
 with open("albums.json", "w") as json_file:
