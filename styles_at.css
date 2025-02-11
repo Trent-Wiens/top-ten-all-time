@@ -25,6 +25,8 @@ body {
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+    background-color: #222;
+    display: flex;  /* Ensures both front & back align */
 }
 
 .album-card.flipped .album-inner {
@@ -68,44 +70,64 @@ body {
 }
 
 /* === Radar Plot Popout === */
+
+/* The radar tab is inside the drawer, so it moves with it */
 .radar-tab {
     position: absolute;
-    right: -30px; /* Starts outside the album */
+    right: -20px; /* Aligns with the edge of the radar panel */
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(180deg);
     background: #444;
     color: white;
     padding: 5px;
     font-size: 12px;
     cursor: pointer;
-    writing-mode: vertical-rl; /* Makes text vertical */
+    writing-mode: vertical-rl;
     border-radius: 5px 0 0 5px;
+    transition: transform 0.3s ease-in-out, right 0.3s ease-in-out;
+    z-index: -1;
 }
 
 .radar-panel {
     position: absolute;
-    right: -120px; /* Hidden by default */
-    top: 50%;
-    width: 120px;
-    height: 25%;
+    left: 0%;
+    top: 7.5%;
+    width: 100%;
+    height: 100%;
     background: #333;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(0);
-    transition: transform 0.3s ease-in-out;
+    opacity: 0; /* Fully hidden at start */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: -1; /* Behind album */
+    border-radius: 10px;
+    pointer-events: none;
+
 }
 
+/* Hide radar panel while flipping */
+.album-card.flipping .radar-panel {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+/* The radar plot image inside the drawer */
 .radar-panel img {
     width: 100px;
     height: 100px;
-    display: none; /* Hidden until the tab is clicked */
+    /* display: none; Hidden until the tab is clicked */
 }
 
-.radar-panel.open {
-    transform: translateX(-120px);
+/* Moves the drawer into view when open */
+.radar-panel.open{
+    transform: translateX(125px);
+    display: flex;
+    opacity: 1;
+    /* z-index: 10; Bring in front */
 }
 
+/* Show the radar plot image when open */
 .radar-panel.open img {
     display: block;
 }

@@ -4,13 +4,27 @@ import matplotlib.pyplot as plt
 import json
 import os
 
+from PIL import Image
+
+def get_average_color(image_path):
+    """Returns the average color of an image as an (R, G, B) tuple."""
+    try:
+        img = Image.open(image_path)
+        img = img.resize((50, 50))  # Resize to speed up processing
+        pixels = np.array(img)
+        avg_color = pixels.mean(axis=(0, 1))  # Average across width & height
+        return tuple(avg_color[:3].astype(int))  # Convert to (R, G, B)
+    except Exception as e:
+        print(f"Error processing {image_path}: {e}")
+        return (100, 100, 255)  # Default color (blue) if error occurs
+
 # Set up the radar plot categories
 CATEGORIES = ["Lyrical Wit", "Lyrical Depth", "Production", "Cohesiveness", "Emotional Impact", "Creativity"]
 
 # Ensure output folders exist
 os.makedirs("radar_plots", exist_ok=True)
 
-def generate_radar_plot(album_name, scores):
+def generate_radar_plot(album_name, scores, cover_url):
     """Creates and saves a radar plot for an album."""
     num_vars = len(CATEGORIES)
 
@@ -18,17 +32,38 @@ def generate_radar_plot(album_name, scores):
     angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
     scores += scores[:1]  # Close the radar shape
     angles += angles[:1]  # Close the radar shape
+    
+    avg_color = get_average_color(cover_url)
+    fill_color = (avg_color[0] / 255, avg_color[1] / 255, avg_color[2] / 255, 0.4)  # RGBA with transparency
+    line_color = (avg_color[0] / 255, avg_color[1] / 255, avg_color[2] / 255, 1)  # Full opacity for lines
 
     # Create figure
     fig, ax = plt.subplots(figsize=(4, 4), subplot_kw=dict(polar=True))
-    ax.fill(angles, scores, color='blue', alpha=0.25)
-    ax.plot(angles, scores, color='blue', linewidth=2)
+    
+    # Draw hexagonal grid manually
+    for i in np.linspace(5, 1.0, 5):  # Five grid levels
+        hexagon = [i] * num_vars + [i]  # Close the shape
+        ax.plot(angles, hexagon, linestyle="solid", color="black", alpha=1)
+        
+    ax.fill(angles, scores, color=fill_color)  # Fill with transparency
+    ax.plot(angles, scores, color=line_color, linewidth=2)  # Outline
 
     # Labels
     ax.set_xticks(angles[:-1])
-    ax.set_xticklabels(CATEGORIES, fontsize=8)
+    ax.set_xticklabels(CATEGORIES, fontsize=8, fontdict={'fontsize': 10, 'fontweight': 'normal', 'family': 'serif'})
+    # Move labels outward
+    print(angles)
+    for label, angle in zip(ax.get_xticklabels(), angles[:-1]):
+        if (angle > 3 and angle < 4):
+            label.set_y(label.get_position()[1] - .2)  # Move slightly out
+        elif angle == 0:
+            label.set_y(label.get_position()[1] - .125)  # Move slightly out
+        else:
+            label.set_y(label.get_position()[1] + .05)  # Move slightly down
+
     ax.set_yticklabels([])
-    ax.grid(True)
+    ax.spines["polar"].set_visible(False)  # Remove outer circle
+    ax.grid(False)  # Remove grid lines    
 
     # Save the figure
     safe_name = album_name.replace(" ", "_").replace("/", "_")  # Ensure safe filenames
@@ -55,10 +90,10 @@ for _, row in df.iterrows():
 
     # Extract and normalize scores (0-10 scale)
     scores = [row[col] if pd.notna(row[col]) else 5 for col in CATEGORIES]
-    scores = [min(max(score, 0), 10) / 10.0 for score in scores]  # Normalize 0-10 to 0-1
+    # scores = [min(max(score, 0), 10) / 10.0 for score in scores]  # Normalize 0-10 to 0-1
     
     # Generate radar plot and store its path
-    album_info["Radar Plot"] = generate_radar_plot(row["Album Name"], scores)
+    album_info["Radar Plot"] = generate_radar_plot(row["Album Name"], scores, row["Cover URL"])
 
     albums_data.append(album_info)
 

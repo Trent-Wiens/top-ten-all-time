@@ -50,7 +50,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Toggle radar panel on tab click
                 radarTab.addEventListener("click", function (event) {
                     event.stopPropagation(); // Prevent flipping when clicking the tab
-                    radarPanel.classList.toggle("open");
+                
+                    if (!radarPanel.classList.contains("open")) {
+                        radarPanel.classList.add("open");
+                    } else {
+                        radarPanel.classList.remove("open");
+                    }
                 });
 
                 // Album text and icons
@@ -71,16 +76,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Append elements
                 back.appendChild(radarTab);
-                back.appendChild(radarPanel);
 
                 inner.appendChild(front);
                 inner.appendChild(back);
                 card.appendChild(inner);
+                card.appendChild(radarPanel);  // ✅ Separate from album-back
 
-                // Add flip functionality
                 card.addEventListener("click", function () {
-                    card.classList.toggle("flipped");
+                    if (!card.classList.contains("flipping")) {
+                        card.classList.add("flipping");
+                
+                        setTimeout(() => {
+                            card.classList.toggle("flipped");
+                            radarTab.classList.toggle("flipped");
+                        }, 10); // Small delay before flipping starts
+                
+                        setTimeout(() => {
+                            card.classList.remove("flipping"); // Remove class after animation ends
+                            radarPanel.style.opacity = "1"; // Show radar panel after animation
+                        }, 600); // Adjust this time to match CSS flip animation duration
+                
+                        // Hide radar panel while flipping
+                        radarPanel.style.opacity = "0";
+                    }
                 });
+
+                // // Add flip functionality
+                // card.addEventListener("click", function () {
+                //     card.classList.toggle("flipped");
+                //     radarTab.classList.toggle("flipped");
+                // });
 
                 container.appendChild(card);
             });
