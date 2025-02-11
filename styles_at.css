@@ -64,22 +64,57 @@ body {
     border-radius: 10px;
     text-align: center;
     height: 100%;
+    position: relative;
 }
 
-/* Make album text flexible so it doesn't push the icons away */
-.album-text {
-    flex-grow: 1; /* Takes up available space */
+/* === Radar Plot Popout === */
+.radar-tab {
+    position: absolute;
+    right: -30px; /* Starts outside the album */
+    top: 50%;
+    transform: translateY(-50%);
+    background: #444;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    writing-mode: vertical-rl; /* Makes text vertical */
+    border-radius: 5px 0 0 5px;
+}
+
+.radar-panel {
+    position: absolute;
+    right: -120px; /* Hidden by default */
+    top: 50%;
+    width: 120px;
+    height: 25%;
+    background: #333;
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers the text */
     align-items: center;
+    justify-content: center;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Keeps the music links pinned to the bottom */
+.radar-panel img {
+    width: 100px;
+    height: 100px;
+    display: none; /* Hidden until the tab is clicked */
+}
+
+.radar-panel.open {
+    transform: translateX(-120px);
+}
+
+.radar-panel.open img {
+    display: block;
+}
+
+
 .music-links {
     display: flex;
     gap: 10px;
-    margin-top: auto; /* Pushes the icons to the bottom */
+    margin-top: auto;
     padding-bottom: 5px;
 }
 

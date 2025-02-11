@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             albums.forEach(album => {
                 // Ensure required keys exist
                 if (!album["Album Name"] || !album["Artist"] || !album["Cover URL"] ||
-                    !album["Spotify Link"] || !album["Apple Music Link"]) {
+                    !album["Spotify Link"] || !album["Apple Music Link"] || !album["Radar Plot"]) {
                     console.warn("Skipping invalid album:", album);
                     return;
                 }
@@ -38,6 +38,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 let back = document.createElement("div");
                 back.className = "album-back";
 
+                // Radar plot tab
+                let radarTab = document.createElement("div");
+                radarTab.className = "radar-tab";
+                radarTab.innerText = "Radar Plot";
+
+                let radarPanel = document.createElement("div");
+                radarPanel.className = "radar-panel";
+                radarPanel.innerHTML = `<img src="${album['Radar Plot']}" alt="Radar Plot">`;
+
+                // Toggle radar panel on tab click
+                radarTab.addEventListener("click", function (event) {
+                    event.stopPropagation(); // Prevent flipping when clicking the tab
+                    radarPanel.classList.toggle("open");
+                });
+
                 // Album text and icons
                 back.innerHTML = `
                     <div class="album-text">
@@ -54,7 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                 `;
 
-                // Append front and back to the inner container
+                // Append elements
+                back.appendChild(radarTab);
+                back.appendChild(radarPanel);
+
                 inner.appendChild(front);
                 inner.appendChild(back);
                 card.appendChild(inner);

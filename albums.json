@@ -1,1 +1,18 @@
-[{"Album Name":"I LAY DOWN MY LIFE FOR YOU","Artist":"JPEGMAFIA","Cover URL":"img\/ILDMLFY.jpg","Lyrical Wit":4,"Lyrical Depth":3,"Production":5,"Cohesiveness":5,"Production.1":5,"Emotional Impact":3,"Creativity":5,"Spotify Link":"https:\/\/open.spotify.com\/album\/1ezs1QD5SYQ6LtxpC9y5I2?si=fl_Y9-8tSKCEgEGfz_tmIg","Apple Music Link":"https:\/\/music.apple.com\/us\/album\/i-lay-down-my-life-for-you\/1760036431"},{"Album Name":"Flower Boy","Artist":"Tyler, the Creator","Cover URL":"img\/FlowerBoy.webp","Lyrical Wit":4,"Lyrical Depth":4,"Production":4,"Cohesiveness":5,"Production.1":5,"Emotional Impact":4,"Creativity":4,"Spotify Link":"https:\/\/open.spotify.com\/album\/2nkto6YNI4rUYTLqEwWJ3o?si=VgtMMHQdQRaWVzPRTuhPSA","Apple Music Link":"https:\/\/music.apple.com\/us\/album\/flower-boy\/1254572564"}]
+[
+    {
+        "Album Name": "I LAY DOWN MY LIFE FOR YOU",
+        "Artist": "JPEGMAFIA",
+        "Cover URL": "img/ILDMLFY.jpg",
+        "Spotify Link": "https://open.spotify.com/album/1ezs1QD5SYQ6LtxpC9y5I2?si=fl_Y9-8tSKCEgEGfz_tmIg",
+        "Apple Music Link": "https://music.apple.com/us/album/i-lay-down-my-life-for-you/1760036431",
+        "Radar Plot": "radar_plots/I_LAY_DOWN_MY_LIFE_FOR_YOU.png"
+    },
+    {
+        "Album Name": "Flower Boy",
+        "Artist": "Tyler, the Creator",
+        "Cover URL": "img/FlowerBoy.webp",
+        "Spotify Link": "https://open.spotify.com/album/2nkto6YNI4rUYTLqEwWJ3o?si=VgtMMHQdQRaWVzPRTuhPSA",
+        "Apple Music Link": "https://music.apple.com/us/album/flower-boy/1254572564",
+        "Radar Plot": "radar_plots/Flower_Boy.png"
+    }
+]
