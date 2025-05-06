@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(albums => {
             console.log("Albums loaded:", albums); // Debugging log
 
+            albums.sort((a,b) => b.Sum - a.Sum);
+
             let container = document.getElementById("albumContainer");
             if (!container) {
                 console.error("Error: #albumContainer not found.");
@@ -19,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             albums.forEach(album => {
                 // Ensure required keys exist
-                if (!album["Album Name"] || !album["Artist"] || !album["Cover URL"] ||
+                if (!album["Album Name"] || !album["Artist"] || !album["Cover Path"] ||
                     !album["Spotify Link"] || !album["Apple Music Link"] || !album["Radar Plot"]) {
                     console.warn("Skipping invalid album:", album);
                     return;
@@ -33,7 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 let front = document.createElement("div");
                 front.className = "album-front";
-                front.innerHTML = `<img src="${album['Cover URL']}" alt="Album Cover">`;
+                // front.innerHTML = `<img src="${album['Cover Path']}" alt="Album Cover">`;
+                front.innerHTML = `<video autoplay muted loop playsinline><source src="${album['Cover Path']}" type="video/mp4"></video>`;
 
                 let back = document.createElement("div");
                 back.className = "album-back";
@@ -49,6 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Toggle radar panel on tab click
                 radarTab.addEventListener("click", function (event) {
+                    event.stopPropagation(); // Prevent flipping when clicking the tab
+                
+                    if (!radarPanel.classList.contains("open")) {
+                        radarPanel.classList.add("open");
+                        radarTab.classList.add("open");
+                    } else {
+                        radarPanel.classList.remove("open");
+                        radarTab.classList.remove("open");
+                    }
+                });
+
+                radarPanel.addEventListener("click", function (event) {
                     event.stopPropagation(); // Prevent flipping when clicking the tab
                 
                     if (!radarPanel.classList.contains("open")) {

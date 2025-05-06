@@ -2,7 +2,8 @@
     {
         "Album Name": "I LAY DOWN MY LIFE FOR YOU",
         "Artist": "JPEGMAFIA",
-        "Cover URL": "img/ILDMLFY.jpg",
+        "Cover Path": "img/ILAYDOWNMYLIFEFORYOU.jpg",
+        "Sum": 25,
         "Spotify Link": "https://open.spotify.com/album/1ezs1QD5SYQ6LtxpC9y5I2?si=fl_Y9-8tSKCEgEGfz_tmIg",
         "Apple Music Link": "https://music.apple.com/us/album/i-lay-down-my-life-for-you/1760036431",
         "Radar Plot": "radar_plots/I_LAY_DOWN_MY_LIFE_FOR_YOU.png"
@@ -10,25 +11,379 @@
     {
         "Album Name": "Flower Boy",
         "Artist": "Tyler, The Creator",
-        "Cover URL": "img/FlowerBoy.webp",
+        "Cover Path": "img/FlowerBoy.jpg",
+        "Sum": 25,
         "Spotify Link": "https://open.spotify.com/album/2nkto6YNI4rUYTLqEwWJ3o?si=VgtMMHQdQRaWVzPRTuhPSA",
         "Apple Music Link": "https://music.apple.com/us/album/flower-boy/1254572564",
         "Radar Plot": "radar_plots/Flower_Boy.png"
     },
     {
+        "Album Name": "IGOR",
+        "Artist": "Tyler, The Creator",
+        "Cover Path": "img/IGOR.jpg",
+        "Sum": 30,
+        "Spotify Link": "https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE?si=auYJvt1bQQWEV01JlT20-Q",
+        "Apple Music Link": "https://music.apple.com/us/album/igor/1463409338",
+        "Radar Plot": "radar_plots/IGOR.png"
+    },
+    {
         "Album Name": "Madvilliany",
         "Artist": "Madvillian, Madlib, MF DOOM",
-        "Cover URL": "img/Madvillainy.jpg",
+        "Cover Path": "img/Madvilliany.jpg",
+        "Sum": 26,
         "Spotify Link": "https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk?si=Fa5Lk-t0Sk6Ll0hwzRCf4g",
         "Apple Music Link": "https://music.apple.com/us/album/madvillainy/887699504",
         "Radar Plot": "radar_plots/Madvilliany.png"
     },
     {
-        "Album Name": "IGOR",
+        "Album Name": "DAMN",
+        "Artist": "Kendrick Lamar",
+        "Cover Path": "img/DAMN.jpg",
+        "Sum": 24,
+        "Spotify Link": "https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY?si=62IOQ6O9Tne3Nx7mOMKZlQ",
+        "Apple Music Link": "https://music.apple.com/us/album/damn/1440881047",
+        "Radar Plot": "radar_plots/DAMN.png"
+    },
+    {
+        "Album Name": "To Pimp A Butterfly",
+        "Artist": "Kendrick Lamar",
+        "Cover Path": "img/ToPimpAButterfly.jpg",
+        "Sum": 30,
+        "Spotify Link": "https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP?si=Q6Ku6LRTToyNbXZ9GKsAVg",
+        "Apple Music Link": "https://music.apple.com/us/album/to-pimp-a-butterfly/1440828886",
+        "Radar Plot": "radar_plots/To_Pimp_A_Butterfly.png"
+    },
+    {
+        "Album Name": "Dark Times",
+        "Artist": "Vince Staples",
+        "Cover Path": "img/DarkTimes.jpg",
+        "Sum": 15,
+        "Spotify Link": "https://open.spotify.com/album/30BFY5VHii4PyWqkTubUWX?si=3h9FGAx0Q7Sjjqy4x2MXIg",
+        "Apple Music Link": "https://music.apple.com/us/album/dark-times/1747072325",
+        "Radar Plot": "radar_plots/Dark_Times.png"
+    },
+    {
+        "Album Name": "The Forever Story",
+        "Artist": "JID",
+        "Cover Path": "img/TheForeverStory.jpg",
+        "Sum": 25,
+        "Spotify Link": "https://open.spotify.com/album/4rJDCELWL0fjdmN9Gn4f4g?si=a52010b81cd340c6",
+        "Apple Music Link": "https://music.apple.com/us/album/the-forever-story-extended-version/1652407604",
+        "Radar Plot": "radar_plots/The_Forever_Story.png"
+    },
+    {
+        "Album Name": "DIE FOR MY BITCH",
+        "Artist": "Baby Keem",
+        "Cover Path": "img/DIEFORMYBITCH.jpg",
+        "Sum": 18,
+        "Spotify Link": "https://open.spotify.com/album/7Cw4LObzgnVqSlkuIyywtI?si=62e5b2c3965d49e2",
+        "Apple Music Link": "https://music.apple.com/us/album/die-for-my-bitch/1472614374",
+        "Radar Plot": "radar_plots/DIE_FOR_MY_BITCH.png"
+    },
+    {
+        "Album Name": "The Melodic Blue",
+        "Artist": "Baby Keem",
+        "Cover Path": "img/TheMelodicBlue.jpg",
+        "Sum": 23,
+        "Spotify Link": "https://open.spotify.com/album/5Co3CGD9lBQVNnn7q0px1g?si=1w7pNx7oQBCFWqJf5_vNjg",
+        "Apple Music Link": "https://music.apple.com/us/album/the-melodic-blue-deluxe/1651945753",
+        "Radar Plot": "radar_plots/The_Melodic_Blue.png"
+    },
+    {
+        "Album Name": "Balloonerism",
+        "Artist": "Mac Miller",
+        "Cover Path": "img/Balloonerism.mp4",
+        "Sum": 27,
+        "Spotify Link": "https://open.spotify.com/album/2ANFIaCb53iam0MBkFFoxY?si=423c548676df46e2",
+        "Apple Music Link": "https://music.apple.com/us/album/balloonerism/1780891320",
+        "Radar Plot": "radar_plots/Balloonerism.png"
+    },
+    {
+        "Album Name": "Swimming",
+        "Artist": "Mac Miller",
+        "Cover Path": "img/Swimming.mp4",
+        "Sum": 21,
+        "Spotify Link": "https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk?si=52dbbec277c44782",
+        "Apple Music Link": "https://music.apple.com/us/album/swimming/1408996052",
+        "Radar Plot": "radar_plots/Swimming.png"
+    },
+    {
+        "Album Name": "The Divine Feminine",
+        "Artist": "Mac Miller",
+        "Cover Path": "img/TheDivineFeminine.jpg",
+        "Sum": 21,
+        "Spotify Link": "https://open.spotify.com/album/6f6tko6NWoH00cyFOl4VYQ?si=64c23e21c1d64d7c",
+        "Apple Music Link": "https://music.apple.com/us/album/the-divine-feminine/1137965822",
+        "Radar Plot": "radar_plots/The_Divine_Feminine.png"
+    },
+    {
+        "Album Name": "GNX",
+        "Artist": "Kendrick Lamar",
+        "Cover Path": "img/GNX.jpg",
+        "Sum": 25,
+        "Spotify Link": "https://open.spotify.com/album/0hvT3yIEysuuvkK73vgdcW?si=d3dcfdd88c5a4bdd",
+        "Apple Music Link": "https://music.apple.com/us/album/gnx/1781270319",
+        "Radar Plot": "radar_plots/GNX.png"
+    },
+    {
+        "Album Name": "Mr. Morale & The Big Steppers",
+        "Artist": "Kendrick Lamar",
+        "Cover Path": "img/Mr.Morale&TheBigSteppers.jpg",
+        "Sum": 22,
+        "Spotify Link": "https://open.spotify.com/album/79ONNoS4M9tfIA1mYLBYVX?si=db158563a4274a3d",
+        "Apple Music Link": "https://music.apple.com/us/album/mr-morale-the-big-steppers/1623854804",
+        "Radar Plot": "radar_plots/Mr._Morale_&_The_Big_Steppers.png"
+    },
+    {
+        "Album Name": "Black Panther: The Album ",
+        "Artist": "Kendrick Lamar",
+        "Cover Path": "img/BlackPanther:TheAlbum.jpg",
+        "Sum": 23,
+        "Spotify Link": "https://open.spotify.com/album/3pLdWdkj83EYfDN6H2N8MR?si=fbd92fda3c8f4d95",
+        "Apple Music Link": "https://music.apple.com/us/album/black-panther-the-album/1440906927",
+        "Radar Plot": "radar_plots/Black_Panther:_The_Album_.png"
+    },
+    {
+        "Album Name": "good kid, m.A.A.d city",
+        "Artist": "Kendrick Lamar",
+        "Cover Path": "img/goodkid,m.A.A.dcity.jpg",
+        "Sum": 26,
+        "Spotify Link": "https://open.spotify.com/album/6PBZN8cbwkqm1ERj2BGXJ1?si=Aw5zyiG1T7KFjHOfH60jLQ",
+        "Apple Music Link": "https://music.apple.com/us/album/good-kid-m-a-a-d-city/1471263898",
+        "Radar Plot": "radar_plots/good_kid,_m.A.A.d_city.png"
+    },
+    {
+        "Album Name": "CHROMAKOPIA",
         "Artist": "Tyler, The Creator",
-        "Cover URL": "img/IGOR.jpg",
-        "Spotify Link": "https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE?si=auYJvt1bQQWEV01JlT20-Q",
-        "Apple Music Link": "https://music.apple.com/us/album/igor/1463409338",
-        "Radar Plot": "radar_plots/IGOR.png"
+        "Cover Path": "img/CHROMAKOPIA.jpg",
+        "Sum": 25,
+        "Spotify Link": "https://open.spotify.com/album/0U28P0QVB1QRxpqp5IHOlH",
+        "Apple Music Link": "https://music.apple.com/us/album/chromakopia/1776500452",
+        "Radar Plot": "radar_plots/CHROMAKOPIA.png"
+    },
+    {
+        "Album Name": "CALL ME IF YOU GET LOST",
+        "Artist": "Tyler, The Creator",
+        "Cover Path": "img/CALLMEIFYOUGETLOST.jpg",
+        "Sum": 25,
+        "Spotify Link": "https://open.spotify.com/album/45ba6QAtNrdv6Ke4MFOKk9",
+        "Apple Music Link": "https://music.apple.com/us/album/call-me-if-you-get-lost/1573484415",
+        "Radar Plot": "radar_plots/CALL_ME_IF_YOU_GET_LOST.png"
+    },
+    {
+        "Album Name": "LOUIE",
+        "Artist": "Kenny Beats",
+        "Cover Path": "img/LOUIE.jpg",
+        "Sum": 23,
+        "Spotify Link": "https://open.spotify.com/album/3SKVtzmihlnGFylW5nC5kj",
+        "Apple Music Link": "https://music.apple.com/us/album/louie/1635648979",
+        "Radar Plot": "radar_plots/LOUIE.png"
+    },
+    {
+        "Album Name": "The College Dropout",
+        "Artist": "Kanye West",
+        "Cover Path": "img/TheCollegeDropout.jpg",
+        "Sum": 22,
+        "Spotify Link": "https://open.spotify.com/album/4Uv86qWpGTxf7fU7lG5X6F",
+        "Apple Music Link": "https://music.apple.com/us/album/the-college-dropout/1412872568",
+        "Radar Plot": "radar_plots/The_College_Dropout.png"
+    },
+    {
+        "Album Name": "Yeezus",
+        "Artist": "Kanye West",
+        "Cover Path": "img/Yeezus.jpg",
+        "Sum": 28,
+        "Spotify Link": "https://open.spotify.com/album/0XTAmejG8F97wF5MWoVbaY",
+        "Apple Music Link": "https://music.apple.com/us/album/yeezus/1440873068",
+        "Radar Plot": "radar_plots/Yeezus.png"
+    },
+    {
+        "Album Name": "The Life of Pablo",
+        "Artist": "Kanye West",
+        "Cover Path": "img/TheLifeofPablo.jpg",
+        "Sum": 25,
+        "Spotify Link": "https://open.spotify.com/album/7gsWAHLeT0w7es6FofOXk1",
+        "Apple Music Link": "https://music.apple.com/us/album/the-life-of-pablo/1443063578",
+        "Radar Plot": "radar_plots/The_Life_of_Pablo.png"
+    },
+    {
+        "Album Name": "ye",
+        "Artist": "Kanye West",
+        "Cover Path": "img/ye.jpg",
+        "Sum": 25,
+        "Spotify Link": "https://open.spotify.com/album/5EBGCvO6upi3GNknMVe9x9",
+        "Apple Music Link": "https://music.apple.com/us/album/ye/1441460375",
+        "Radar Plot": "radar_plots/ye.png"
+    },
+    {
+        "Album Name": "KIDS SEE GHOSTS",
+        "Artist": "KIDS SEE GHOSTS, Kanye West, Kid Cudi",
+        "Cover Path": "img/KIDSSEEGHOSTS.jpg",
+        "Sum": 25,
+        "Spotify Link": "https://open.spotify.com/album/1v9d39PxNmtRvYWw2ztydx",
+        "Apple Music Link": "https://music.apple.com/us/album/kids-see-ghosts/1396710872",
+        "Radar Plot": "radar_plots/KIDS_SEE_GHOSTS.png"
+    },
+    {
+        "Album Name": "i am > i was",
+        "Artist": "21 Savage",
+        "Cover Path": "img/iam>iwas.jpg",
+        "Sum": 16,
+        "Spotify Link": "https://open.spotify.com/album/007DWn799UWvfY1wwZeENR",
+        "Apple Music Link": "https://music.apple.com/us/album/i-am-i-was/1446918493",
+        "Radar Plot": "radar_plots/i_am_>_i_was.png"
+    },
+    {
+        "Album Name": "SAVAGE MODE II",
+        "Artist": "21 Savage",
+        "Cover Path": "img/SAVAGEMODEII.jpg",
+        "Sum": 20,
+        "Spotify Link": "https://open.spotify.com/album/6wTyGUWGCilBFZ837k5aRi",
+        "Apple Music Link": "https://music.apple.com/us/album/savage-mode-ii/1534209957",
+        "Radar Plot": "radar_plots/SAVAGE_MODE_II.png"
+    },
+    {
+        "Album Name": "Imaginal Disk",
+        "Artist": "Magdelena Bay",
+        "Cover Path": "img/ImaginalDisk.jpg",
+        "Sum": 26,
+        "Spotify Link": "https://open.spotify.com/album/4HTy9WFTYooRjE9giTmzAF",
+        "Apple Music Link": "https://music.apple.com/us/album/imaginal-disk/1751414757",
+        "Radar Plot": "radar_plots/Imaginal_Disk.png"
+    },
+    {
+        "Album Name": "mini mix vol. 3",
+        "Artist": "Magdelena Bay",
+        "Cover Path": "img/minimixvol.3.jpg",
+        "Sum": 25,
+        "Spotify Link": "https://open.spotify.com/album/09FqVvj8EwzFjYQhiT1LUM",
+        "Apple Music Link": "https://music.apple.com/us/album/mini-mix-vol-3/1676332186",
+        "Radar Plot": "radar_plots/mini_mix_vol._3.png"
+    },
+    {
+        "Album Name": "GUTS",
+        "Artist": "Olivia Rodrigo",
+        "Cover Path": "img/GUTS.jpg",
+        "Sum": 22,
+        "Spotify Link": "https://open.spotify.com/album/1xJHno7SmdVtZAtXbdbDZp",
+        "Apple Music Link": "https://music.apple.com/us/album/guts/1694386825",
+        "Radar Plot": "radar_plots/GUTS.png"
+    },
+    {
+        "Album Name": "24K Magic",
+        "Artist": "Bruno Mars",
+        "Cover Path": "img/24KMagic.jpg",
+        "Sum": 20,
+        "Spotify Link": "https://open.spotify.com/album/4PgleR09JVnm3zY1fW3XBA",
+        "Apple Music Link": "https://music.apple.com/us/album/24k-magic/1161503945",
+        "Radar Plot": "radar_plots/24K_Magic.png"
+    },
+    {
+        "Album Name": "I Know NIGO!",
+        "Artist": "Nigo",
+        "Cover Path": "img/IKnowNIGO!.jpg",
+        "Sum": 23,
+        "Spotify Link": "https://open.spotify.com/album/0BWO5NvsJ3VYoSEqf8YyRj",
+        "Apple Music Link": "https://music.apple.com/us/album/i-know-nigo/1614984200",
+        "Radar Plot": "radar_plots/I_Know_NIGO!.png"
+    },
+    {
+        "Album Name": "King Of The Mischievous South Vol. 2",
+        "Artist": "Denzel Curry",
+        "Cover Path": "img/KingOfTheMischievousSouthVol.2.jpg",
+        "Sum": 20,
+        "Spotify Link": "https://open.spotify.com/album/6LoDd1G8en4TcqdSg7yqrV",
+        "Apple Music Link": "https://music.apple.com/us/album/king-of-the-mischievous-south-vol-2/1746800438",
+        "Radar Plot": "radar_plots/King_Of_The_Mischievous_South_Vol._2.png"
+    },
+    {
+        "Album Name": "The Crossroads",
+        "Artist": "Cordae",
+        "Cover Path": "img/TheCrossroads.jpg",
+        "Sum": 24,
+        "Spotify Link": "https://open.spotify.com/album/7oZOlyOhZSUn1zfojIzMHR",
+        "Apple Music Link": "https://music.apple.com/us/album/the-crossroads/1772974529",
+        "Radar Plot": "radar_plots/The_Crossroads.png"
+    },
+    {
+        "Album Name": "Blonde ",
+        "Artist": "Frank Ocean",
+        "Cover Path": "img/Blonde.jpg",
+        "Sum": 30,
+        "Spotify Link": "https://open.spotify.com/album/3mH6qwIy9crq0I9YQbOuDf",
+        "Apple Music Link": "https://music.apple.com/us/album/blonde/1146195596",
+        "Radar Plot": "radar_plots/Blonde_.png"
+    },
+    {
+        "Album Name": "Alligator Bites Never Heal",
+        "Artist": "Doechii",
+        "Cover Path": "img/AlligatorBitesNeverHeal.jpg",
+        "Sum": 22,
+        "Spotify Link": "https://open.spotify.com/album/60UzB8mOCMpc7xkuJE6Bwc",
+        "Apple Music Link": "https://music.apple.com/us/album/alligator-bites-never-heal/1763934442",
+        "Radar Plot": "radar_plots/Alligator_Bites_Never_Heal.png"
+    },
+    {
+        "Album Name": "Bando Stone and The New World",
+        "Artist": "Childish Gambino",
+        "Cover Path": "img/BandoStoneandTheNewWorld.jpg",
+        "Sum": 24,
+        "Spotify Link": "https://open.spotify.com/album/4yUqNSK6jMi7Y6eWl03U5r",
+        "Apple Music Link": "https://music.apple.com/us/album/bando-stone-and-the-new-world/1757678472",
+        "Radar Plot": "radar_plots/Bando_Stone_and_The_New_World.png"
+    },
+    {
+        "Album Name": "\"Awaken, My Love!\" ",
+        "Artist": "Childish Gambino",
+        "Cover Path": "img/\"Awaken,MyLove!\".jpg",
+        "Sum": 26,
+        "Spotify Link": "https://open.spotify.com/album/4JCybsNZUXWrK2Jpyn12Ni",
+        "Apple Music Link": "https://music.apple.com/us/album/awaken-my-love/1771719334",
+        "Radar Plot": "radar_plots/\"Awaken,_My_Love!\"_.png"
+    },
+    {
+        "Album Name": "Because the Internet",
+        "Artist": "Childish Gambino",
+        "Cover Path": "img/BecausetheInternet.jpg",
+        "Sum": 29,
+        "Spotify Link": "https://open.spotify.com/album/5h0KYWMZIg8xT6eRGYkNMh",
+        "Apple Music Link": "https://music.apple.com/us/album/because-the-internet/1771709429",
+        "Radar Plot": "radar_plots/Because_the_Internet.png"
+    },
+    {
+        "Album Name": "Camp",
+        "Artist": "Childish Gambino",
+        "Cover Path": "img/Camp.jpg",
+        "Sum": 18,
+        "Spotify Link": "https://open.spotify.com/album/01MRGgNbfWrE291tQjw9ta",
+        "Apple Music Link": "https://music.apple.com/us/album/camp/1771713810",
+        "Radar Plot": "radar_plots/Camp.png"
+    },
+    {
+        "Album Name": "Crtl",
+        "Artist": "SZA",
+        "Cover Path": "img/Crtl.jpg",
+        "Sum": 23,
+        "Spotify Link": "https://open.spotify.com/album/6OgQ8QxV9rrdtmRmzGvwiT",
+        "Apple Music Link": "https://music.apple.com/us/album/ctrl/1239976329",
+        "Radar Plot": "radar_plots/Crtl.png"
+    },
+    {
+        "Album Name": "SOS",
+        "Artist": "SZA",
+        "Cover Path": "img/SOS.jpg",
+        "Sum": 24,
+        "Spotify Link": "https://open.spotify.com/album/07w0rG5TETcyihsEIZR3qG",
+        "Apple Music Link": "https://music.apple.com/us/album/sos/1657869377",
+        "Radar Plot": "radar_plots/SOS.png"
+    },
+    {
+        "Album Name": "The Miseducation of Lauryn Hill",
+        "Artist": "Ms. Lauryn Hill",
+        "Cover Path": "img/TheMiseducationofLaurynHill.jpg",
+        "Sum": 29,
+        "Spotify Link": "https://open.spotify.com/album/1BZoqf8Zje5nGdwZhOjAtD",
+        "Apple Music Link": "https://music.apple.com/us/album/the-miseducation-of-lauryn-hill/1276760743",
+        "Radar Plot": "radar_plots/The_Miseducation_of_Lauryn_Hill.png"
     }
 ]

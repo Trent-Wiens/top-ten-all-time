@@ -18,8 +18,8 @@ body {
 }
 
 .album-card {
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    aspect-ratio: 1/1;
     perspective: 1000px;
     cursor: pointer;
 }
@@ -61,6 +61,14 @@ body {
     border-radius: 1px;
     /* border-radius: 10px; */
 }
+.album-front video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 1px;
+    /* border-radius: 10px; */
+}
 
 .album-back {
     background-color: black;
@@ -73,6 +81,7 @@ body {
     text-align: center;
     height: 100%;
     position: relative;
+    padding: 0 5% 0 5%;
 }
 
 .album-text{
@@ -82,13 +91,16 @@ body {
     vertical-align: middle;
     position: relative;
     padding-top: 25%;
+    font-size: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 /* === Radar Plot Popout === */
 
 /* The radar tab is inside the drawer, so it moves with it */
 .radar-tab {
     position: absolute;
-    right: -20px;
+    right: -28px;
     top: 50%;
     width: 50px;
     background: white;
@@ -96,7 +108,7 @@ body {
     border-color: black;
     border: 2px;
     padding: 5px;
-    font-size: 12px;
+    font-size: 20px;
     cursor: pointer;
     writing-mode: vertical-rl;
     border-radius: 0 5px 5px 0;
@@ -155,11 +167,11 @@ body {
 
 /* Moves the drawer into view when open */
 .radar-panel.open{
-    transform: translateX(175px);
+    transform: translateX(85%);
 }
 
 .radar-tab.open{
-    transform: translateX(175px);
+    transform: translateX(458%);
 }
 
 
@@ -172,8 +184,8 @@ body {
 }
 
 .music-icon {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }

@@ -1,5 +1,44 @@
-Album Name,Artist,Cover URL,Lyrical Wit,Lyrical Depth,Cohesiveness,Production,Emotional Impact,Creativity,Spotify Link,Apple Music Link
-I LAY DOWN MY LIFE FOR YOU,JPEGMAFIA,img/ILDMLFY.jpg,4,3,5,5,3,5,https://open.spotify.com/album/1ezs1QD5SYQ6LtxpC9y5I2?si=fl_Y9-8tSKCEgEGfz_tmIg,https://music.apple.com/us/album/i-lay-down-my-life-for-you/1760036431
-Flower Boy,"Tyler, The Creator",img/FlowerBoy.webp,3,4,5,4,4,4,https://open.spotify.com/album/2nkto6YNI4rUYTLqEwWJ3o?si=VgtMMHQdQRaWVzPRTuhPSA,https://music.apple.com/us/album/flower-boy/1254572564
-IGOR,"Tyler, The Creator",img/IGOR.jpg,4,5,5,5,5,5,https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE?si=auYJvt1bQQWEV01JlT20-Q,https://music.apple.com/us/album/igor/1463409338
-Madvilliany,"Madvillian, Madlib, MF DOOM",img/Madvillainy.jpg,5,4,3,5,3,5,https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk?si=Fa5Lk-t0Sk6Ll0hwzRCf4g,https://music.apple.com/us/album/madvillainy/887699504
+Album Name,Artist,Lyrics,Vibes,Cohesiveness,Production,Emotional Impact,Creativity,Sum,Spotify Link,Apple Music Link
+I LAY DOWN MY LIFE FOR YOU,JPEGMAFIA,3,4,5,5,3,5,25,https://open.spotify.com/album/1ezs1QD5SYQ6LtxpC9y5I2?si=fl_Y9-8tSKCEgEGfz_tmIg,https://music.apple.com/us/album/i-lay-down-my-life-for-you/1760036431
+Flower Boy,"Tyler, The Creator",4,4,5,4,4,4,25,https://open.spotify.com/album/2nkto6YNI4rUYTLqEwWJ3o?si=VgtMMHQdQRaWVzPRTuhPSA,https://music.apple.com/us/album/flower-boy/1254572564
+IGOR,"Tyler, The Creator",5,5,5,5,5,5,30,https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE?si=auYJvt1bQQWEV01JlT20-Q,https://music.apple.com/us/album/igor/1463409338
+Madvilliany,"Madvillian, Madlib, MF DOOM",5,5,3,5,3,5,26,https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk?si=Fa5Lk-t0Sk6Ll0hwzRCf4g,https://music.apple.com/us/album/madvillainy/887699504
+DAMN,Kendrick Lamar,5,3,5,4,4,3,24,https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY?si=62IOQ6O9Tne3Nx7mOMKZlQ,https://music.apple.com/us/album/damn/1440881047
+To Pimp A Butterfly,Kendrick Lamar,5,5,5,5,5,5,30,https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP?si=Q6Ku6LRTToyNbXZ9GKsAVg,https://music.apple.com/us/album/to-pimp-a-butterfly/1440828886
+Dark Times,Vince Staples,2,2,2,3,3,3,15,https://open.spotify.com/album/30BFY5VHii4PyWqkTubUWX?si=3h9FGAx0Q7Sjjqy4x2MXIg,https://music.apple.com/us/album/dark-times/1747072325
+The Forever Story,JID,4,4,4,5,4,4,25,https://open.spotify.com/album/4rJDCELWL0fjdmN9Gn4f4g?si=a52010b81cd340c6,https://music.apple.com/us/album/the-forever-story-extended-version/1652407604
+DIE FOR MY BITCH,Baby Keem,2,5,3,3,1,4,18,https://open.spotify.com/album/7Cw4LObzgnVqSlkuIyywtI?si=62e5b2c3965d49e2,https://music.apple.com/us/album/die-for-my-bitch/1472614374
+The Melodic Blue,Baby Keem,4,3,4,4,4,4,23,https://open.spotify.com/album/5Co3CGD9lBQVNnn7q0px1g?si=1w7pNx7oQBCFWqJf5_vNjg,https://music.apple.com/us/album/the-melodic-blue-deluxe/1651945753
+Balloonerism,Mac Miller,4,5,4,5,5,4,27,https://open.spotify.com/album/2ANFIaCb53iam0MBkFFoxY?si=423c548676df46e2,https://music.apple.com/us/album/balloonerism/1780891320
+Swimming,Mac Miller,3,3,3,4,4,4,21,https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk?si=52dbbec277c44782,https://music.apple.com/us/album/swimming/1408996052
+The Divine Feminine,Mac Miller,2,4,3,4,5,3,21,https://open.spotify.com/album/6f6tko6NWoH00cyFOl4VYQ?si=64c23e21c1d64d7c,https://music.apple.com/us/album/the-divine-feminine/1137965822
+GNX,Kendrick Lamar,4,5,3,5,3,5,25,https://open.spotify.com/album/0hvT3yIEysuuvkK73vgdcW?si=d3dcfdd88c5a4bdd,https://music.apple.com/us/album/gnx/1781270319
+Mr. Morale & The Big Steppers,Kendrick Lamar,4,2,3,3,5,5,22,https://open.spotify.com/album/79ONNoS4M9tfIA1mYLBYVX?si=db158563a4274a3d,https://music.apple.com/us/album/mr-morale-the-big-steppers/1623854804
+Black Panther: The Album ,Kendrick Lamar,3,4,2,5,4,5,23,https://open.spotify.com/album/3pLdWdkj83EYfDN6H2N8MR?si=fbd92fda3c8f4d95,https://music.apple.com/us/album/black-panther-the-album/1440906927
+"good kid, m.A.A.d city",Kendrick Lamar,5,5,5,4,4,3,26,https://open.spotify.com/album/6PBZN8cbwkqm1ERj2BGXJ1?si=Aw5zyiG1T7KFjHOfH60jLQ,https://music.apple.com/us/album/good-kid-m-a-a-d-city/1471263898
+CHROMAKOPIA,"Tyler, The Creator",4,4,3,5,4,5,25,https://open.spotify.com/album/0U28P0QVB1QRxpqp5IHOlH,https://music.apple.com/us/album/chromakopia/1776500452
+CALL ME IF YOU GET LOST,"Tyler, The Creator",4,4,4,5,4,4,25,https://open.spotify.com/album/45ba6QAtNrdv6Ke4MFOKk9,https://music.apple.com/us/album/call-me-if-you-get-lost/1573484415
+LOUIE,Kenny Beats,1,5,5,5,3,4,23,https://open.spotify.com/album/3SKVtzmihlnGFylW5nC5kj,https://music.apple.com/us/album/louie/1635648979
+The College Dropout,Kanye West,3,4,3,5,2,5,22,https://open.spotify.com/album/4Uv86qWpGTxf7fU7lG5X6F,https://music.apple.com/us/album/the-college-dropout/1412872568
+Yeezus,Kanye West,5,4,5,5,4,5,28,https://open.spotify.com/album/0XTAmejG8F97wF5MWoVbaY,https://music.apple.com/us/album/yeezus/1440873068
+The Life of Pablo,Kanye West,4,5,3,5,3,5,25,https://open.spotify.com/album/7gsWAHLeT0w7es6FofOXk1,https://music.apple.com/us/album/the-life-of-pablo/1443063578
+ye,Kanye West,4,5,4,4,4,4,25,https://open.spotify.com/album/5EBGCvO6upi3GNknMVe9x9,https://music.apple.com/us/album/ye/1441460375
+KIDS SEE GHOSTS,"KIDS SEE GHOSTS, Kanye West, Kid Cudi",4,5,4,4,4,4,25,https://open.spotify.com/album/1v9d39PxNmtRvYWw2ztydx,https://music.apple.com/us/album/kids-see-ghosts/1396710872
+i am > i was,21 Savage,2,5,4,2,1,2,16,https://open.spotify.com/album/007DWn799UWvfY1wwZeENR,https://music.apple.com/us/album/i-am-i-was/1446918493
+SAVAGE MODE II,21 Savage,2,5,5,5,1,2,20,https://open.spotify.com/album/6wTyGUWGCilBFZ837k5aRi,https://music.apple.com/us/album/savage-mode-ii/1534209957
+Imaginal Disk,Magdelena Bay,3,5,5,5,3,5,26,https://open.spotify.com/album/4HTy9WFTYooRjE9giTmzAF,https://music.apple.com/us/album/imaginal-disk/1751414757
+mini mix vol. 3,Magdelena Bay,3,5,5,5,2,5,25,https://open.spotify.com/album/09FqVvj8EwzFjYQhiT1LUM,https://music.apple.com/us/album/mini-mix-vol-3/1676332186
+GUTS,Olivia Rodrigo,4,4,4,4,4,2,22,https://open.spotify.com/album/1xJHno7SmdVtZAtXbdbDZp,https://music.apple.com/us/album/guts/1694386825
+24K Magic,Bruno Mars,3,5,5,3,2,2,20,https://open.spotify.com/album/4PgleR09JVnm3zY1fW3XBA,https://music.apple.com/us/album/24k-magic/1161503945
+I Know NIGO!,Nigo,3,5,3,5,2,5,23,https://open.spotify.com/album/0BWO5NvsJ3VYoSEqf8YyRj,https://music.apple.com/us/album/i-know-nigo/1614984200
+King Of The Mischievous South Vol. 2,Denzel Curry,4,4,3,3,2,4,20,https://open.spotify.com/album/6LoDd1G8en4TcqdSg7yqrV,https://music.apple.com/us/album/king-of-the-mischievous-south-vol-2/1746800438
+The Crossroads,Cordae,4,4,4,4,4,4,24,https://open.spotify.com/album/7oZOlyOhZSUn1zfojIzMHR,https://music.apple.com/us/album/the-crossroads/1772974529
+Blonde ,Frank Ocean,5,5,5,5,5,5,30,https://open.spotify.com/album/3mH6qwIy9crq0I9YQbOuDf,https://music.apple.com/us/album/blonde/1146195596
+Alligator Bites Never Heal,Doechii,3,4,3,4,3,5,22,https://open.spotify.com/album/60UzB8mOCMpc7xkuJE6Bwc,https://music.apple.com/us/album/alligator-bites-never-heal/1763934442
+Bando Stone and The New World,Childish Gambino,3,4,3,5,4,5,24,https://open.spotify.com/album/4yUqNSK6jMi7Y6eWl03U5r,https://music.apple.com/us/album/bando-stone-and-the-new-world/1757678472
+"""Awaken, My Love!"" ",Childish Gambino,4,4,5,5,3,5,26,https://open.spotify.com/album/4JCybsNZUXWrK2Jpyn12Ni,https://music.apple.com/us/album/awaken-my-love/1771719334
+Because the Internet,Childish Gambino,5,5,5,5,4,5,29,https://open.spotify.com/album/5h0KYWMZIg8xT6eRGYkNMh,https://music.apple.com/us/album/because-the-internet/1771709429
+Camp,Childish Gambino,4,3,3,3,2,3,18,https://open.spotify.com/album/01MRGgNbfWrE291tQjw9ta,https://music.apple.com/us/album/camp/1771713810
+Crtl,SZA,4,4,4,4,3,4,23,https://open.spotify.com/album/6OgQ8QxV9rrdtmRmzGvwiT,https://music.apple.com/us/album/ctrl/1239976329
+SOS,SZA,5,4,4,4,4,3,24,https://open.spotify.com/album/07w0rG5TETcyihsEIZR3qG,https://music.apple.com/us/album/sos/1657869377
+The Miseducation of Lauryn Hill,Ms. Lauryn Hill,5,5,5,5,4,5,29,https://open.spotify.com/album/1BZoqf8Zje5nGdwZhOjAtD,https://music.apple.com/us/album/the-miseducation-of-lauryn-hill/1276760743

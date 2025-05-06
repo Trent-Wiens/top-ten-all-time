@@ -20,7 +20,7 @@ def get_average_color(image_path):
         return (100, 100, 255)  # Default color (blue) if error occurs
 
 # Set up the radar plot categories
-CATEGORIES = ["Lyrical Wit", "Lyrical Depth", "Production", "Cohesiveness", "Emotional Impact", "Creativity"]
+CATEGORIES = ["Lyrics", "Vibes", "Production", "Cohesiveness", "Emotional Impact", "Creativity"]
 
 # Ensure output folders exist
 os.makedirs("radar_plots", exist_ok=True)
@@ -91,10 +91,13 @@ df = pd.read_csv(csv_file)
 # Process each album
 albums_data = []
 for _, row in df.iterrows():
+    album_name_no_spaces = row["Album Name"].replace(" ", "")
+    cover_path = f"img/{album_name_no_spaces}.jpg"
     album_info = {
         "Album Name": row["Album Name"],
         "Artist": row["Artist"],
-        "Cover URL": row["Cover URL"],
+        "Cover Path": cover_path,  # Include the local file path instead of the URL
+        "Sum": row["Sum"],
         "Spotify Link": row["Spotify Link"],
         "Apple Music Link": row["Apple Music Link"],
     }
@@ -104,12 +107,12 @@ for _, row in df.iterrows():
     # scores = [min(max(score, 0), 10) / 10.0 for score in scores]  # Normalize 0-10 to 0-1
     
     # Generate radar plot and store its path
-    album_info["Radar Plot"] = generate_radar_plot(row["Album Name"], scores, row["Cover URL"])
+    album_info["Radar Plot"] = generate_radar_plot(row["Album Name"], scores, cover_path)
 
     albums_data.append(album_info)
 
-# Shuffle the order of albums_data before saving
-random.shuffle(albums_data)
+# Sort albums by "Sum" in descending order (highest rated first)
+df = df.sort_values(by="Sum", ascending=False)
 
 # Save JSON
 with open("albums.json", "w") as json_file:
